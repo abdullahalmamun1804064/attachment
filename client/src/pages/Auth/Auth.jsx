@@ -19,7 +19,7 @@ const Auth = () => {
   const [isSignUp, setIsSignUp] = useState(false);
 
   const [data, setData] = useState(initialState);
- 
+
   const [confirmPass, setConfirmPass] = useState(true);
 
   // const dispatch = useDispatch()

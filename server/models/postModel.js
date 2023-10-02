@@ -7,7 +7,7 @@ const postSchema = mongoose.Schema(
     likes: [],
     createdAt: {
       type: Date,
-      default: new Date(), 
+      default: new Date(),
     },
     image: String,
   },

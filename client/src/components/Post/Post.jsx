@@ -6,16 +6,13 @@ import Heart from "../../img/like.png";
 import NotLike from "../../img/notlike.png";
 import { likePost } from "../../api/PostsRequests";
 import { useSelector } from "react-redux";
-// import axios from "axios";
 
 const Post = ({ data }) => {
   const { user } = useSelector((state) => state.authReducer.authData);
-
   const [liked, setLiked] = useState(data.likes.includes(user._id));
   const [likes, setLikes] = useState(data.likes.length)
-   
-  console.log(data,"------------mamun---------------data");
-   
+
+  
   const handleLike = () => {
     likePost(data._id, user._id);
     setLiked((prev) => !prev);
